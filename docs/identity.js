@@ -9,4 +9,3 @@ document.querySelectorAll('.outlet .tag').forEach((tag,i)=>tag.innerHTML=`${line
 document.querySelectorAll('.ribbon span').forEach((label,i)=>label.insertAdjacentHTML('afterbegin',lineIcon(['scissors','spark','academy'][i])));
 document.querySelectorAll('.tiles .tile').forEach((tile,i)=>tile.insertAdjacentHTML('afterbegin',`<span class="category-icon">${lineIcon(['partners','camera','play'][i])}</span>`));
 document.querySelector('.stamp').innerHTML=`${lineIcon('scissors')}<span>BROCKZ</span>`;
-const heroPortrait=document.createElement('div');heroPortrait.className='hero-men';heroPortrait.innerHTML=`<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=85" alt="Sample men's barber styling session"><span>${lineIcon('scissors')} Men’s style · sample</span>`;document.querySelector('.hero').append(heroPortrait);
